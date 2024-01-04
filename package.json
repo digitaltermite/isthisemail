@@ -1,0 +1,22 @@
+{
+  "name": "validate-email",
+  "version": "1.0.0",
+  "description": "Fastest email validator. Unlike most validators, this uses string validator does not use regex which may be slow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "email",
+    "validator",
+    "validation",
+    "valid",
+    "is",
+    "correct",
+    "fast",
+    "string",
+    "@"
+  ],
+  "author": "Mateusz Sybilla",
+  "license": "Apache-2.0"
+}
