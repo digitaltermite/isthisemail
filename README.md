@@ -5,6 +5,6 @@ Fastest and lightweight email validator. Unlike most validators, this use string
 # Usage:
 
 ```
-const isEmailValid = require("is-email-valid")
-const result = isEmailValid("example@google.com");
+const itThisEmail = require("itThisEmail")
+const result = itThisEmail("example@google.com");
 ```

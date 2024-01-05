@@ -57,7 +57,7 @@ function isHex(char) {
   );
 }
 
-function isEmailValid(email) {
+function itThisEmail(email) {
   // False if email is not string, shorter than 3 chars (min. a@a) or does not include "@"
   if (typeof email !== "string" || email.length < 3 || !email.includes("@")) {
     return false;
@@ -187,4 +187,4 @@ function isEmailValid(email) {
   return true;
 }
 
-module.exports = isEmailValid;
+module.exports = itThisEmail;
