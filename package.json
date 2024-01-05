@@ -1,7 +1,7 @@
 {
-  "name": "validate-email",
+  "name": "isEmailValid",
   "version": "1.0.0",
-  "description": "Fastest email validator. Unlike most validators, this uses string validator does not use regex which may be slow.",
+  "description": "Fastest and lightweight email validator. Unlike most validators, this use string validator instead of regex.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -18,5 +18,14 @@
     "@"
   ],
   "author": "Mateusz Sybilla",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitaltermite/validate-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitaltermite/validate-email/issues"
+  },
+  "homepage": "https://github.com/digitaltermite/validate-email#readme"
 }

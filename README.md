@@ -1,5 +1,10 @@
+# Description
+
+Fastest and lightweight email validator. Unlike most validators, this use string validator instead of regex.
+
 # Usage:
+
 ```
-const validateEmail = require("validateEmail")
-const result = validateEmail("example@google.com");
+const isEmailValid = require("isEmailValid")
+const result = isEmailValid("example@google.com");
 ```

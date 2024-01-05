@@ -57,7 +57,7 @@ function isHex(char) {
   );
 }
 
-function validateEmail(email) {
+function isEmailValid(email) {
   // False if email is not string, shorter than 3 chars (min. a@a) or does not include "@"
   if (typeof email !== "string" || email.length < 3 || !email.includes("@")) {
     return false;
@@ -83,30 +83,34 @@ function validateEmail(email) {
     const char = localPart[i].toLocaleLowerCase();
 
     if (
-      isLatin(char) ||
-      isDigit(char) ||
-      char === "!" ||
-      char === "#" ||
-      char === "$" ||
-      char === "%" ||
-      char === "'" ||
-      char === "*" ||
-      char === "-" ||
-      char === "/" ||
-      char === "=" ||
-      char === "?" ||
-      char === "^" ||
-      char === "_" ||
-      char === "`" ||
-      char === "{" ||
-      char === "|" ||
-      char === "}" ||
-      char === "~" ||
-      (char === "+" && i !== 0) || // + cannot be the first char
-      (char === "." &&
-        prevChar !== "." && // .. not allowed
-        i !== 0 && // . cannot be the first char
-        i !== localPart.length - 1) // . cannot be the last char
+      !(
+        (
+          isLatin(char) ||
+          isDigit(char) ||
+          char === "!" ||
+          char === "#" ||
+          char === "$" ||
+          char === "%" ||
+          char === "'" ||
+          char === "*" ||
+          char === "-" ||
+          char === "/" ||
+          char === "=" ||
+          char === "?" ||
+          char === "^" ||
+          char === "_" ||
+          char === "`" ||
+          char === "{" ||
+          char === "|" ||
+          char === "}" ||
+          char === "~" ||
+          (char === "+" && i !== 0) || // + cannot be the first char
+          (char === "." &&
+            prevChar !== "." && // .. not allowed
+            i !== 0 && // . cannot be the first char
+            i !== localPart.length - 1)
+        ) // . cannot be the last char
+      )
     ) {
       return false;
     }
@@ -183,4 +187,4 @@ function validateEmail(email) {
   return true;
 }
 
-module.exports = validateEmail;
+module.exports = isEmailValid;
