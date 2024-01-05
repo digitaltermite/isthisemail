@@ -1,7 +1,7 @@
-const itThisEmail = require("./index");
+const isthisemail = require("./index");
 
 function test(email) {
-  const result = itThisEmail(email);
+  const result = isthisemail(email);
   console.log(`${result ? "Passed:\t\t" : "Not passed:\t"} ${email}`);
 }
 

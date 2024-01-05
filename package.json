@@ -1,18 +1,19 @@
 {
-  "name": "is-email-valid",
+  "name": "isthisemail",
   "version": "1.0.0",
-  "description": "Fastest and lightweight email validator. Unlike most validators, this use string validator instead of regex.",
+  "description": "Fast and lightweight email validator. Unlike most validators, this use string validator instead of regex.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "keywords": [
+    "is",
+    "this",
     "email",
+    "correct",
     "validator",
     "validation",
     "valid",
-    "is",
-    "correct",
     "fast",
     "string",
     "@"
@@ -22,10 +23,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digitaltermite/validate-email.git"
+    "url": "git+https://github.com/digitaltermite/isthisemail.git"
   },
   "bugs": {
-    "url": "https://github.com/digitaltermite/validate-email/issues"
+    "url": "https://github.com/digitaltermite/isthisemail/issues"
   },
-  "homepage": "https://github.com/digitaltermite/validate-email#readme"
+  "homepage": "https://github.com/digitaltermite/isthisemail#readme"
 }
