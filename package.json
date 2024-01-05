@@ -1,5 +1,5 @@
 {
-  "name": "isEmailValid",
+  "name": "is-email-valid",
   "version": "1.0.0",
   "description": "Fastest and lightweight email validator. Unlike most validators, this use string validator instead of regex.",
   "main": "index.js",
